@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitAPITraining(Without co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevitAPITrainingParameterEntry", "RevitAPITrainingParameterEntry\RevitAPITrainingParameterEntry.csproj", "{140B6B93-F38F-41C7-8F05-5693616609B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW3.1SelectionByFace.ReadingTheParameter", "HW3.1SelectionByFace.ReadingTheParameter\HW3.1SelectionByFace.ReadingTheParameter.csproj", "{2AF841A1-851C-4C32-AC38-B8808FA37B59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW3.2Pipelength", "HW3.2Pipelength\HW3.2Pipelength.csproj", "{349421C3-AB78-4991-9011-DBF9F5108BF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW3.3LengthMargin", "HW3.3LengthMargin\HW3.3LengthMargin.csproj", "{81F36695-EA5E-4B97-BBB5-62E005147C7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +33,18 @@ Global
 		{140B6B93-F38F-41C7-8F05-5693616609B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{140B6B93-F38F-41C7-8F05-5693616609B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{140B6B93-F38F-41C7-8F05-5693616609B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AF841A1-851C-4C32-AC38-B8808FA37B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF841A1-851C-4C32-AC38-B8808FA37B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF841A1-851C-4C32-AC38-B8808FA37B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF841A1-851C-4C32-AC38-B8808FA37B59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{349421C3-AB78-4991-9011-DBF9F5108BF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{349421C3-AB78-4991-9011-DBF9F5108BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{349421C3-AB78-4991-9011-DBF9F5108BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{349421C3-AB78-4991-9011-DBF9F5108BF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81F36695-EA5E-4B97-BBB5-62E005147C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F36695-EA5E-4B97-BBB5-62E005147C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F36695-EA5E-4B97-BBB5-62E005147C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F36695-EA5E-4B97-BBB5-62E005147C7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
