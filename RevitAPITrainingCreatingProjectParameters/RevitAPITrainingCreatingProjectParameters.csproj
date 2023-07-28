@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E5940FC8-5197-45B5-A6BB-AD3E6B76543C}</ProjectGuid>
+    <ProjectGuid>{45B7C7DB-DAA5-4C4A-AB3D-CFB51E7426BE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RevitAPITrainingParametersReading</RootNamespace>
-    <AssemblyName>RevitAPITrainingParametersReading</AssemblyName>
+    <RootNamespace>RevitAPITrainingCreatingProjectParameters</RootNamespace>
+    <AssemblyName>RevitAPITrainingCreatingProjectParameters</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
