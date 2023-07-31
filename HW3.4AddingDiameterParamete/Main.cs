@@ -52,7 +52,7 @@ namespace HW3._4AddingDiameterParamete
                     //Parameter diameter2 = (UnitUtils.ConvertFromInternalUnits(duct.get_Parameter(BuiltInParameter.RBS_PIPE_INNER_DIAM_PARAM).AsDouble(), UnitTypeId.Millimeters));
                     double diameter1 = (UnitUtils.ConvertFromInternalUnits((diameterPar1).AsDouble(), UnitTypeId.Millimeters));
                     double diameter2 = (UnitUtils.ConvertFromInternalUnits((diameterPar2).AsDouble(), UnitTypeId.Millimeters));
-                    diameter = $"{diameter1:f0}/{diameter2:f0}";
+                    diameter = $"Труба {diameter1:f0}/{diameter2:f0}";
                     markParameter.Set(diameter);
                     ts.Commit();
                 }
