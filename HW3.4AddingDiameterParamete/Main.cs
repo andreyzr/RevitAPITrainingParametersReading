@@ -2,6 +2,7 @@
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.DB.Mechanical;
+using Autodesk.Revit.DB.Plumbing;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.UI.Selection;
 using System;
@@ -28,9 +29,9 @@ namespace HW3._4AddingDiameterParamete
 
 
 
-            IList<Duct> ducts = new FilteredElementCollector(doc)
-                .OfClass(typeof(Duct))
-                .Cast<Duct>()
+            IList<Pipe> pipes = new FilteredElementCollector(doc)
+                .OfClass(typeof(Pipe))
+                .Cast<Pipe>()
                 .ToList();
 
             //using (Transaction ts = new Transaction(doc, "Add parameter"))
@@ -42,17 +43,17 @@ namespace HW3._4AddingDiameterParamete
 
             using (Transaction ts = new Transaction(doc, "Set parameters"))
             {
-                foreach (var duct in ducts)
+                foreach (var pipe in pipes)
                 {
                     ts.Start();
-                    Parameter markParameter = duct.LookupParameter("Наименование");
-                    Parameter diameterPar1 = duct.get_Parameter(BuiltInParameter.RBS_PIPE_OUTER_DIAMETER);
-                    Parameter diameterPar2 = duct.get_Parameter(BuiltInParameter.RBS_PIPE_INNER_DIAM_PARAM);
+                    Parameter markParameter = pipe.LookupParameter("Наименование");
+                    Parameter diameterPar1 = pipe.get_Parameter(BuiltInParameter.RBS_PIPE_OUTER_DIAMETER);
+                    Parameter diameterPar2 = pipe.get_Parameter(BuiltInParameter.RBS_PIPE_INNER_DIAM_PARAM);
                     //Parameter diameter2 = (UnitUtils.ConvertFromInternalUnits(duct.get_Parameter(BuiltInParameter.RBS_PIPE_INNER_DIAM_PARAM).AsDouble(), UnitTypeId.Millimeters));
                     double diameter1 = (UnitUtils.ConvertFromInternalUnits((diameterPar1).AsDouble(), UnitTypeId.Millimeters));
-                    double diameter2= (UnitUtils.ConvertFromInternalUnits((diameterPar2).AsDouble(), UnitTypeId.Millimeters));
-                    diameter = $"{diameter1}/{diameter2}";
-                    markParameter.Set("TEST");
+                    double diameter2 = (UnitUtils.ConvertFromInternalUnits((diameterPar2).AsDouble(), UnitTypeId.Millimeters));
+                    diameter = $"{diameter1:f0}/{diameter2:f0}";
+                    markParameter.Set(diameter);
                     ts.Commit();
                 }
             }
