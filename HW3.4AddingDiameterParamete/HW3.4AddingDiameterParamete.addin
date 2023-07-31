@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Assembly>"C:\RevitAPITraining\HW3.4AddingDiameterParamete.dll"</Assembly>
+    <AddInId>3F82C201-E652-4044-A421-E06A4BA61B64</AddInId>
+    <FullClassName>HW3.4AddingDiameterParamete.Main</FullClassName>
+    <VendorId>ADSK</VendorId>
+    <Text>Добавление параметра проекта</Text>
+  </AddIn>
+</RevitAddIns>
