@@ -27,14 +27,14 @@ namespace HW3._4AddingDiameterParamete
             using (Transaction ts = new Transaction(doc, "Add parameter"))
             {
                 ts.Start();
-                CreateSharedparameter(uiapp.Application, doc, "Труба", categorySet, BuiltInParameterGroup.PG_DATA, true);
+                CreateSharedParameter(uiapp.Application, doc, "Труба", categorySet, BuiltInParameterGroup.PG_DATA, true);
                 ts.Commit();
             }
 
             return Result.Succeeded;
         }
 
-        private static void CreateSharedparameter(Application application,
+        private static void CreateSharedParameter(Application application,
             Document doc, string parameterName, CategorySet categorySet,
             BuiltInParameterGroup builtInParameterGroup, bool isInstance)
         {
