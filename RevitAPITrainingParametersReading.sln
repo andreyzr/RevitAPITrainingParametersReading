@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW3.2Pipelength", "HW3.2Pip
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW3.3LengthMargin", "HW3.3LengthMargin\HW3.3LengthMargin.csproj", "{81F36695-EA5E-4B97-BBB5-62E005147C7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW3.4AddingDiameterParamete", "HW3.4AddingDiameterParamete\HW3.4AddingDiameterParamete.csproj", "{E5BF762F-8EC0-479A-9EFC-FDF71B01AE65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{81F36695-EA5E-4B97-BBB5-62E005147C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81F36695-EA5E-4B97-BBB5-62E005147C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81F36695-EA5E-4B97-BBB5-62E005147C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5BF762F-8EC0-479A-9EFC-FDF71B01AE65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5BF762F-8EC0-479A-9EFC-FDF71B01AE65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5BF762F-8EC0-479A-9EFC-FDF71B01AE65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5BF762F-8EC0-479A-9EFC-FDF71B01AE65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
