@@ -20,7 +20,7 @@ namespace RevitAPITrainingParametersReading
             Document doc = uidoc.Document;
 
             var selectedRef = uidoc.Selection.PickObject(ObjectType.Element, "Выберете элемент");
-            var selectedElemtnt=doc.GetElement(selectedRef);
+            Element selectedElemtnt=doc.GetElement(selectedRef);
 
             if(selectedElemtnt is Wall)
             {
